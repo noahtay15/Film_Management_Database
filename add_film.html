@@ -1,0 +1,63 @@
+<!--	Author: 	Noah Taylor
+		Date:		Nov 13, 2022
+		File:		hw8
+-->
+
+<html>
+<head>
+	<title>Add Film</title>
+	
+</head>
+<body>
+	<h1>Please input the following information about the film:</h1>
+	<form action = "add_film.php" method = "post">
+	
+		<p> Title:
+			<input type = "text" size = "20" name = "title">
+		</p>
+		<p> Description:
+			<input type = "text" size = "200" name = "description">
+		</p>
+		<p> Release Year:
+			<input type = "text" size = "20" name = "release_year">
+		</p>
+		<p> Language ID:
+			<input type = "text" size = "20" name = "language_id">
+		</p>
+		<p> Rental Duration:
+			<input type = "text" size = "20" name = "rental_duration">
+		</p>
+		<p> Rental Rate:
+			<input type = "text" size = "20" name = "rental_rate">
+		</p>
+		<p> Length:
+			<input type = "text" size = "20" name = "length">
+		</p>
+		<p> Replacement Cost:
+			<input type = "text" size = "20" name = "replacement_cost">
+		</p>
+		<p> Rating:
+			<select name="rating" id="rating">
+			<option value="G">G</option>
+			<option value="PG">PG</option>
+			<option value="PG-13">PG-13</option>
+			<option value="R">R</option>
+			<option value="NC-17">NC-17</option>
+			</select>
+		</p>
+		<p> Special Features:
+			<select name="special_features" id="special_features">
+			<option value="trailers">Trailers</option>
+			<option value="commentaries">Commentaries</option>
+			<option value="deleted_scenes">Deleted Scenes</option>
+			<option value="behind_the_scenes">Behind the Scenes</option>
+			</select>
+		</p>
+		<input type = "submit" value = "Save">
+		<form action="manager.html">
+		<input type = "submit" value="Cancel"/>
+		</form>
+	</form>
+	
+</body>
+</html>
